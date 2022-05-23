@@ -1,8 +1,8 @@
-# Text_Selection_Multycolor-
+# Selection Multycolor
 
  - Plugin for multycolor selection text in browser
 
-#Command:
+# Command:
 
 yarn - for install dependecies
 
