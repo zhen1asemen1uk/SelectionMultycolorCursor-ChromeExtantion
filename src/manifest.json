@@ -4,6 +4,13 @@
     "version": "1.0",
     "manifest_version": 2,
 
+    "icons": {
+        "16": "icon16.ico",
+        "32": "icon32.ico",
+        "48": "icon48.ico",
+        "128": "icon128.ico"
+    },
+
     "browser_action": {
         "default_popup": "popup.html"
     },
