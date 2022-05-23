@@ -1,0 +1,20 @@
+{
+    "name": "selection_multycolor",
+    "version": "1.0.0",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "parcel": "^2.5.0"
+    },
+    "dependencies": {
+        "crx-hotreload": "^1.0.6"
+    },
+    "browserslist": "> 0.25%, not dead",
+    "scripts": {
+        "prebuild": "rm -rf dist .cache",
+        "watch": "NODE_ENV=development cp src/manifest.json dist/manifest.json && parcel watch --no-hmr src/{hotReload.js,index.js,popup.html}",
+        "build": "NODE_ENV=production cp src/manifest.json dist/manifest.json && parcel build src/{hotReload.js,index.js,popup.html}",
+        "zip": "zip -r chrome-extension.zip ./dist"
+    },
+    "author": "Yevhen_Semeniuk"
+}

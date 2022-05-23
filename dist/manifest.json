@@ -1,0 +1,21 @@
+{
+    "name": "demo_extension",
+    "description": "An extension built with Parcel(my first)",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+
+    "background": { "scripts": ["hotReload.js"] },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["index.js"]
+        }
+    ],
+
+    "author": "Yevhen Semeniuk (https://github.com/zhen1asemen1uk)"
+}
