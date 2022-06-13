@@ -20,10 +20,10 @@
     },
     "browserslist": "> 0.25%, not dead",
     "scripts": {
-        "prebuild": "rm -rf /dist/* .cache",
-        "start": "parcel  src/{hotReload.js,index.js,popup.html}",
-        "watch": "NODE_ENV=development cp src/manifest.json dist/manifest.json && parcel watch --no-hmr src/{hotReload.js,index.js,popup.html}",
-        "build": "NODE_ENV=production cp src/manifest.json dist/manifest.json && cp src/fav/* dist/ && parcel build src/{hotReload.js,index.js,popup.html} ",
+        "prebuild": "rm -rf /dist/* .cache && rm -rf /dist/*",
+        "start": "parcel  src/{hotReload.js,index.js,index.html}",
+        "watch": "NODE_ENV=development cp src/manifest.json dist/manifest.json && parcel watch --no-hmr src/{hotReload.js,index.js,index.html}",
+        "build": "NODE_ENV=production cp src/manifest.json dist/manifest.json && cp src/fav/* dist/ && parcel build src/{hotReload.js,index.js,index.html} ",
         "zip": "zip -r chrome-extension.zip ./dist"
     },
     "author": "Yevhen_Semeniuk"
